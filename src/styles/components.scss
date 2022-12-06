@@ -19,3 +19,28 @@ $mainColor: #9f5404;
         }
     }
 }
+footer {
+    height: fit-content;
+    background-color: #f4f0ec;
+    span {
+        color: $mainColor;
+    }
+    p {
+        cursor: pointer;
+        font-weight:500;
+    }
+    p:hover {
+        color: $mainColor;
+    }
+    .ft-icn {
+        background-color: rgb(205, 162, 116);
+        border-radius:50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        margin: 2px;
+        padding: 10px;
+    }
+    
+}
