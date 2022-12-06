@@ -1,0 +1,21 @@
+$mainColor: #9f5404;
+
+
+.hd {
+    height: 80px;
+    padding: 0 70px;
+    .title {
+        padding: 10px 0;
+        font-weight:1000;
+        border-bottom: 1.5px solid $mainColor;
+    }
+
+    a {
+        text-decoration: none;
+        color: gray;
+        transition: 0.3s;
+        &:hover {
+            color: $mainColor;
+        }
+    }
+}
