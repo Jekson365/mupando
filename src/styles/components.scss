@@ -25,12 +25,16 @@ footer {
     span {
         color: $mainColor;
     }
-    p {
-        cursor: pointer;
-        font-weight:500;
+    li {
+
+        font-weight: bold;
     }
-    p:hover {
-        color: $mainColor;
+    a {
+        cursor: pointer;
+        font-weight: bold;
+    }
+    li a:hover {
+        color: $mainColor !important;
     }
     .ft-icn {
         background-color: rgb(205, 162, 116);

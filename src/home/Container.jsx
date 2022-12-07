@@ -10,7 +10,6 @@ export const Container = () => {
             <Home />
             <Content/>
             <Attached/>
-            <Footer/>
         </>
     )
 }

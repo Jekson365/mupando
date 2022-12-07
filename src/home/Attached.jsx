@@ -1,4 +1,8 @@
 import React from 'react'
+import { useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { Product } from '../components/Product';
 
 export const Attached = () => {
     var content = [
@@ -18,24 +22,27 @@ export const Attached = () => {
             year: 2015,
         }
     ]
+    useEffect(()=> {
+        AOS.init({
+            duration:1000
+        })
+    },[])
     return (
         <section className='container-fluid position-relative attached d-flex align-items-center flex-column justify-content-center' >
-            <h1 className="h1 m-5 text-white dxa">Our Projects</h1>
-            <div className="container-fluid dxa d-flex flex-wrap align-items-start justify-content-center">
+            <h1 className="h1 m-5 text-white dxa" data-aos='fade-up'>Our Projects</h1>
+            <div className="line"></div>
+            <div 
+            data-aos='fade-up'
+            className="container-fluid  dxa d-flex flex-wrap align-items-start justify-content-center">
                 {content.map((con) => {
                     return (
                         <>
-                            <div className="box m-1 position-relative" style={{ "backgroundImage": `url('${con.image}')` }}>
-                                <div className="box-content">
-                                    <h2 className="h2">{con.title}</h2>
-                                    <p className="p">{con.year}</p>
-                                </div>
-                            </div>
+                            <Product props={con}/>
                         </>
                     )
                 })}
             </div>
-            <button className='main-btn m-5 dxa'>View More</button>
+            <button className='main-btn m-5 dxa' data-aos='fade-up'>View More</button>
             <div className="overlay position-absolute top-0 left-0 w-100 h-100">
             </div>
         </section>
