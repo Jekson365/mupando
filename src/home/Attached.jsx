@@ -22,22 +22,17 @@ export const Attached = () => {
             year: 2015,
         }
     ]
-    useEffect(()=> {
-        AOS.init({
-            duration:1000
-        })
-    },[])
     return (
         <section className='container-fluid position-relative attached d-flex align-items-center flex-column justify-content-center' >
             <h1 className="h1 m-5 text-white dxa" data-aos='fade-up'>Our Projects</h1>
             <div className="line"></div>
-            <div 
-            data-aos='fade-up'
-            className="container-fluid  dxa d-flex flex-wrap align-items-start justify-content-center">
+            <div
+                data-aos='fade-up'
+                className="container-fluid  dxa d-flex flex-wrap align-items-start justify-content-center">
                 {content.map((con) => {
                     return (
                         <>
-                            <Product props={con}/>
+                            <Product props={con} />
                         </>
                     )
                 })}

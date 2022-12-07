@@ -4,7 +4,6 @@
 
 .cover-image {
     background-size: cover;
-    background-position-y: -280px;
 
     h1 {
         font-size: 4rem;
@@ -34,8 +33,16 @@
 
 .box {
     width: 25rem;
+    background-size: cover;
     height: 300px;
 }
+.box:nth-child(n+4) {
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 
 .box-content {
     opacity: 0;
