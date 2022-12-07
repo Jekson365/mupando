@@ -8,7 +8,7 @@ export const Header = () => {
     >
         <h3 className='title h3'>Mupando</h3>
         <nav className='d-flex'>
-            <Link to='/' className='fs-5 color-gray m-3'>About</Link>
+            <Link to='/mupando' className='fs-5 color-gray m-3'>About</Link>
             <Link to='/projects' className='fs-5 color-gray m-3'>Projects</Link>
             <Link to='#' className='fs-5 color-gray m-3'>Contact</Link>
         </nav>

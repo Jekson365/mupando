@@ -20,7 +20,7 @@ function App() {
       <BrowserRouter basename='/'>
         <Header />
         <Routes>
-          <Route path='/' element={<Container />} ></Route>
+          <Route path='/mupando/' element={<Container />} ></Route>
           <Route path='/projects' element={<Projects />} ></Route>
         </Routes>
         <Footer />
