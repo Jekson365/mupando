@@ -29,23 +29,24 @@ export const Content = () => {
     ]
 
     return (
-        <div className='container-fluid d-flex flex-column content-content'>
+        <div className='container d-flex align-items-center flex-column content-content' style={{ "maxWidth": "1300px" }}>
             {content.map((each) => {
-                return (
-                    <section className="in-content  container-fluid d-flex flex-wrap p-5">
+                return (<>
+                    <div className="in-content position-relative container-fluid d-flex align-items-center flex-wrap p-5">
                         <div className="rev row w-100  h-100 align-items-center">
                             <div className="col-md-6">
                                 <h1 className='h1'>{each.title}</h1>
                                 <div className="line"></div>
-                                <p className="fs-5">{each.desc}</p>
+                                <p style={{"fontSize":"22px"}}>{each.desc}</p>
                             </div>
-                            <div className="col-md-6 h-100">
+                            <div className="col-md-6">
                                 <div className="cover h-100 w-100">
-                                    <img src={each.img} className='h-100 w-100'/>
+                                    <img src={each.img} className='h-100 w-100' />
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </div>
+                </>
                 )
             })}
         </div>

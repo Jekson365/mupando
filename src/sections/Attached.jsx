@@ -19,13 +19,13 @@ export const Attached = () => {
         }
     ]
     return (
-        <section className='container-fluid  attached d-flex align-items-center flex-column justify-content-center' >
-            <h1 className="h1 m-5 text-white">Our Projects</h1>
-            <div className="container-fluid d-flex flex-wrap align-items-start justify-content-center">
+        <section className='container-fluid position-relative attached d-flex align-items-center flex-column justify-content-center' >
+            <h1 className="h1 m-5 text-white dxa">Our Projects</h1>
+            <div className="container-fluid dxa d-flex flex-wrap align-items-start justify-content-center">
                 {content.map((con) => {
                     return (
                         <>
-                            <div className="col box m-1 position-relative" style={{ "height": "300px", "backgroundImage": `url('${con.image}')` }}>
+                            <div className="box m-1 position-relative" style={{ "backgroundImage": `url('${con.image}')` }}>
                                 <div className="box-content">
                                     <h2 className="h2">{con.title}</h2>
                                     <p className="p">{con.year}</p>
@@ -35,8 +35,9 @@ export const Attached = () => {
                     )
                 })}
             </div>
-            <button className='main-btn m-5'>View More</button>
-            <div className="overlay position-absolute"></div>
+            <button className='main-btn m-5 dxa'>View More</button>
+            <div className="overlay position-absolute top-0 left-0 w-100 h-100">
+            </div>
         </section>
     )
 }

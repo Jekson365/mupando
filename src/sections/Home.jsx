@@ -19,7 +19,7 @@ export const Home = () => {
                 <button className='main-btn'>Contact Us</button>
             </div>
             <div className="overlay position-absolute w-100 h-100"></div>
-            <video src={mainVideo} className='w-100 h-100' autoPlay loop muted type='video/mp4'></video>
+            <video src={mainVideo} className='w-100' autoPlay loop muted type='video/mp4' style={{ "height": "100vh" }}></video>
         </section>
     )
 }
