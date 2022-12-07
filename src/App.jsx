@@ -13,8 +13,8 @@ function App() {
       <BrowserRouter basename='/'>
         <Header />
         <Routes>
-          <Route path='/' element={<Container />} />
-          <Route path='/projects' element={<Projects />} />
+          <Route path='/' element={<Container />} ></Route>
+          <Route path='/projects' element={<Projects />} ></Route>
         </Routes>
         <Footer/>
       </BrowserRouter>
