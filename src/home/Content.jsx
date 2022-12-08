@@ -33,6 +33,7 @@ export const Content = () => {
             img: "https://uploads-ssl.webflow.com/632872dd89964e9ebf491700/6328811fe72ddc75a5329fcc_r-architecture-uDtC-1NLEzU-unsplash-p-800.jpg",
             transition:"right",
         },
+        
     ]
 
     useEffect(()=> {

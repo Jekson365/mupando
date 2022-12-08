@@ -8,6 +8,7 @@ import { Projects } from './projects/Projects'
 import { Footer } from './home/Footer'
 import { useEffect } from 'react'
 import AOS from 'aos'
+import { Prodpage } from './productpage/Prodpage'
 
 function App() {
   useEffect(() => {
@@ -21,7 +22,8 @@ function App() {
         <Header />
         <Routes>
           <Route path='/mupando/' element={<Container />} ></Route>
-          <Route path='/projects' element={<Projects />} ></Route>
+          <Route path='/mupando/projects' element={<Projects />} ></Route>
+          <Route path='/mupando/projects/:title' element={<Prodpage />} ></Route>
         </Routes>
         <Footer />
       </BrowserRouter>
