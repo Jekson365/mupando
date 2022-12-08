@@ -50,7 +50,7 @@ export const Content = () => {
                             <div data-aos='fade-right' className="col-md-6">
                                 <h1 className='h1'>{each.title}</h1>
                                 <div className="line"></div>
-                                <p style={{"fontSize":"22px"}}>{each.desc}</p>
+                                <p style={{"fontSize":"1.2rem"}}>{each.desc}</p>
                             </div>
                             <div data-aos='fade-left' className="col-md-6">
                                 <div className="cover h-100 w-100">

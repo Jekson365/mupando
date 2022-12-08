@@ -34,7 +34,11 @@
 .box {
     width: 25rem;
     background-size: cover;
-    height: 300px;
+    height: 270px;
+    transition: 0.5s;
+    &:hover {
+        box-shadow: 0 0 30px 0.1px rgba(0, 0, 0, 0.46);
+    }
 }
 .box:nth-child(n+4) {
     height: 400px;
@@ -63,7 +67,7 @@
     padding: 20px;
 
     &:hover {
-        outline: 2px solid white;
+        outline: 1px solid white;
         opacity: 1;
     }
 }

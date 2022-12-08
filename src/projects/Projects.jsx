@@ -34,7 +34,7 @@ export const Projects = ({ props }) => {
             title: "Kingsland Apartament",
             year: 2015,
         },
-      
+
     ]
 
     return (
@@ -42,7 +42,7 @@ export const Projects = ({ props }) => {
             <div className="w-100" style={{ "height": "100vh" }}>
 
                 <div className="cover-image position-relative"
-                    style={{ "height": "65%", "backgroundImage": `url('https://uploads-ssl.webflow.com/632872dd89964e9ebf491700/632a30ed8adda7b59112859c_spacejoy-hWwP4LTGEQA-unsplash.webp')`,'backgroundSize':"cover" }}
+                    style={{ "height": "65%", "backgroundImage": `url('https://uploads-ssl.webflow.com/632872dd89964e9ebf491700/632a30ed8adda7b59112859c_spacejoy-hWwP4LTGEQA-unsplash.webp')`, 'backgroundSize': "cover" }}
                 >
 
                     <div className="overlay w-100 h-100 position-absolute top-0 left-0">
@@ -54,17 +54,19 @@ export const Projects = ({ props }) => {
                 <h1 className='h1'>Elegantly refined</h1>
                 <h1 className='h1 df'>- interior designs</h1>
             </div>
-            <div className="container-fluid d-flex flex-row flex-wrap justify-content-center" data-aos='fade-down'>
-                {content.map((each) => {
-                    return (
-                        <>
 
-                            <Product props={each} />
-                        </>
-                    )
-                })}
-            </div>
-            <div className="empty w-100" style={{"height":"200px","borderBottom":"2px solid #cf6b00"}}></div>
+                <div 
+                style={{"maxWidth":"1300px",'margin':"0 auto",'gridGap':"15px"}}
+                className="w-100  d-flex flex-row flex-wrap justify-content-center" data-aos='fade-down'>
+                    {content.map((each) => {
+                        return (
+                            <>
+                                <Product props={each} />
+                            </>
+                        )
+                    })}
+                </div>
+            <div className="empty w-100" style={{ "height": "200px", "borderBottom": "2px solid #cf6b00" }}></div>
         </>
     )
 }
