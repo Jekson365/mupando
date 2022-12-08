@@ -112,10 +112,10 @@ export const More = () => {
                 <div
                     data-aos='fade-up'
                     className="container-fluid  dxa d-flex flex-wrap align-items-start justify-content-center">
-                    {elements.map((con) => {
+                    {content.map((con) => {
                         return (
                             <>
-                                <Product props={con} />
+                                <Product props={con}/>
                             </>
                         )
                     })}
