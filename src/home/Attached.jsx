@@ -95,7 +95,9 @@ export const Attached = () => {
                     )
                 })}
             </div>
-            <button className='main-btn m-5 dxa' data-aos='fade-up'>View More</button>
+            <a className='main-btn m-5 dxa' data-aos='fade-up' href={'/mupando/projects'}
+            style={{"textDecoration":"none"}}
+            >View More</a>
             <div className="overlay position-absolute top-0 left-0 w-100 h-100">
             </div>
         </section>

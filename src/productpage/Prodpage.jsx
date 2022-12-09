@@ -58,7 +58,7 @@ export const Prodpage = () => {
             ]
         },
         {
-            image: "https://uploads-ssl.webflow.com/6328a1c19d4859dd9eee    6a9e/63493b92a76f0334f2e5d288_6328a450b1e648ca7cc0568c_ralph-ravi-kayden-zSG-kd-L6vw-unsplash-p-1600-p-500.jpg",
+            image: "https://uploads-ssl.webflow.com/6328a1c19d4859dd9eee6a9e/63493b92a76f0334f2e5d288_6328a450b1e648ca7cc0568c_ralph-ravi-kayden-zSG-kd-L6vw-unsplash-p-1600-p-500.jpg",
             title: "Prime Joint",
             year: 2020,
             typology: "House",
@@ -95,20 +95,20 @@ export const Prodpage = () => {
                         <div
                             style={{ "height": "80vh" }}
                             className="prod-page w-100 d-flex p-5 align-items-end justify-content-center flex-wrap">
-                            <div className="col-md-6 h-75 pt-5 align-items-start">
+                            <div className="col-md-6 h-75 pt-5 align-items-start" data-aos='fade-right'>
                                 <h1 className='h1'>{each.title}</h1>
                             </div>
                             <div className="scc col-md-6 h-75">
                                 <ul className='d-flex flex-column align-items-start'>
-                                    <li className='d-flex mt-5 justify-content-between w-100'>
+                                    <li className='d-flex mt-5 justify-content-between w-100' data-aos='fade-left' data-aos-duration="1400">
                                         <p className='fs-2'>Client</p>
                                         <p className='fs-4'>{each.title}</p>
                                     </li>
-                                    <li className='d-flex mt-5 justify-content-between w-100'>
+                                    <li className='d-flex mt-5 justify-content-between w-100' data-aos='fade-left' data-aos-duration="1200">
                                         <p className='fs-2'>Typology</p>
                                         <p className='fs-4'>{each.typology}</p>
                                     </li>
-                                    <li className='d-flex mt-5 justify-content-between w-100'>
+                                    <li className='d-flex mt-5 justify-content-between w-100' data-aos='fade-left' data-aos-duration="1000">
                                         <p className='fs-2'>Year</p>
                                         <p className='fs-4'>{each.year}</p>
                                     </li>
@@ -118,7 +118,7 @@ export const Prodpage = () => {
                         {each.photos.map((img) => {
                             return (
                                 <>
-                                    <div className="container-fluid mt-4" style={{ "height": "100vh" }}>
+                                    <div className="container-fluid mt-4" style={{ "height": "100vh" }} data-aos='fade-down'>
                                         <img src={img} className='w-100 h-100' style={{ "objectFit": "cover", 'borderRadius': "200px" }} />
                                     </div>
                                 </>
@@ -127,8 +127,8 @@ export const Prodpage = () => {
                     </>
                 )
             })}
-            <Overview overview={lorem}/>
-            <More/>
+            <Overview overview={lorem} />
+            <More />
         </div>
     )
 }

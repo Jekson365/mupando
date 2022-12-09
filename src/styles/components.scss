@@ -69,3 +69,28 @@ footer {
         padding-top: 20px;
     }
 }
+.bars {
+    display: none;
+}
+@media screen and (max-width:800px) {
+    .bars {
+        display: block;
+    }
+    .res-nav-dis {
+        opacity: 0;
+    }
+    .res-nav {
+        opacity: 1;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        z-index: 1000;
+        flex-direction: column;
+        text-align: left;
+        display: none;
+        align-items: flex-start;
+        background-color: #f4f0ec;
+    }
+}

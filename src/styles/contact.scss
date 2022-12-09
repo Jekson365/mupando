@@ -1,0 +1,61 @@
+$mainColor: #cda274;
+
+
+
+
+.fot-icn {
+    .ft-icn {
+        margin: 5px;
+    }
+    .sds {
+        padding: 10px;
+        font-size: 45px;
+        border-radius: 50%;
+        background-color:$mainColor;
+    }
+    
+}
+.frm {
+    width: 100%;
+    .form-group {
+        label {
+            font-size: 1.5rem;
+            margin-bottom:10px;
+            font-weight: bold;
+            color: rgba(0,0,0,0.4);
+        }
+        margin: 10px 0;
+        width: 90%;
+        input {
+            width: 90%;
+            outline: 0;
+            background-color: transparent;
+            border: 0.5px solid rgb(199, 199, 199);
+            font-size: 25px;
+            padding: 0 10px;
+        }
+        textarea {
+            background-color: transparent;
+            padding: 0 10px;
+            border: 0.5px solid rgb(199, 199, 199);
+            outline: 0;
+            font-size: 30px;
+        }
+    }
+    .submit {
+        background-color: $mainColor;
+        font-size: 1.5rem;
+        padding: 10px 20px;
+        border-radius: 0px 20px 0px 20px;
+        color: white;
+        border: 0;
+        outline: 0;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .af {
+        align-items: center !important;
+        justify-content: center;
+    }
+}
